@@ -1,8 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.13'
+gem 'rails'
 gem 'bootstrap-sass'
 gem 'bcrypt-ruby'
+gem 'strong_parameters'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -15,6 +16,7 @@ end
 group :development do
 	gem 'annotate'
 end
+
 
 
 # Gems used only for assets and not required
@@ -33,6 +35,7 @@ gem 'jquery-rails'
 
 group :test do
 	gem 'capybara'
+	gem 'factory_girl_rails'
 end
 
 group :production do
