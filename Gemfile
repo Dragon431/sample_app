@@ -7,6 +7,7 @@ gem 'strong_parameters'
 gem 'faker'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
+gem 'jquery-rails'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -21,7 +22,6 @@ group :development do
 end
 
 
-
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -34,16 +34,17 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
 
 group :test do
 	gem 'capybara'
 	gem 'factory_girl_rails'
 end
 
+
 group :production do
 	gem 'pg'
 end
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
